@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek Yewale</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  </head>
+  <body class="dark-mode">
+    <nav id="desktop-nav">
+      <div class="logo">ABHIII</div>
+     
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li> <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button></li>
+        </ul>
+      </div>
+      
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Abhishek Yewale</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" id="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <div class="dropdown-menu" id="dropdownMenu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+ 
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pics1.png" alt="Abhishek  profile picture" />  
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h3 class="title">Abhishek Yewale</h3>
+        <p class="section__text__p2">Game Programmer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/White Minimalist Resume.pdf')"
+          >
+          Resume 
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+               id="linkedin-icon"
+                src="./assets/linkdinlight.png"
+               alt="My LinkedIn profile"
+               class="icon"
+              onclick="location.href='https://www.linkedin.com/in/abhishek-yewale/'"
+            />
+
+          <img
+            id="github-icon"
+            src="./assets/githublight.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/AbhishekYewale1706'"
+          />
+          <img
+          id="instagram-icon"
+          src="./assets/instagramLight.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://www.instagram.com/abhishekyewale1706_official/?next=%2F'"
+        />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-picture.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              I’m an aspiring <b>Game Programmer</b> studying game development at <b>Game Institute</b>, with a focus on C++ and Unreal Engine. 
+              I began with 2D UI and assets,
+               and now I’m exploring gameplay systems, AI, physics, tools, and networking.
+            </p>
+            <p>I’m passionate about creating responsive, fun-to-play games.
+               I enjoy <b>solving problems and learning to write clean, scalable code</b> that grows with the project.
+            </p>
+            <p><b>Want to know more?</b> You can find my contact information in my <b>resume</b>.
+               You can also reach me on any of my social media.</p>
+          </div>
+        </div>
+      
+      </div>
+      <img
+        id="arrow-icon1"
+        src="./assets/arrowlight.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Power-Ups Unlocked</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Game Programming </h2>
+          <div class="article-container">
+            <article>
+              <img
+              id="checkmark-icon"
+                src="./assets/checkmarklight.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Unreal Engine</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+              id="checkmark-icon1"
+                src="./assets/checkmarklight.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Blueprints</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+              id="checkmark-icon2"
+                src="./assets/checkmarklight.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>C & C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+              id="checkmark-icon3"
+                src="./assets/checkmarklight.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Git & Github</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Game Art</h2>
+          <div class="article-container">
+            <article>
+              <img
+              id="checkmark-icon4"
+                src="./assets/checkmarklight.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Photoshop</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+              id="checkmark-icon5"
+                src="./assets/checkmarklight.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Illustrator</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+              id="checkmark-icon6"
+                src="./assets/checkmarklight.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>davinci resolve</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+              id="checkmark-icon7"
+                src="./assets/checkmarklight.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Abode Animator </h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      id="arrow-icon2"
+      src="./assets/arrowlight.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
+  </section>
+
+
+
+
+
+
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project5.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Treasure Hunters</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=3J9I3QzLbAU'"
+              >
+                View
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='Treasure Hunters.html'"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="./assets/project4 (1).png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Meow Runner</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=rNrIw1_YNE4'"
+              >
+              View
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='MenowRunner.html'"
+              >
+               Read More
+              </button>
+            </div>
+          </div>
+            
+        </div>
+        
+      </div>
+
+    
+
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Pokémon Adventure</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://abhiii1706-official.itch.io/pokmon-adventure-i'"
+              >
+              Game Assets
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="./assets/project2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Space Rescue</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://abhiii1706-official.itch.io/2d-platfo'"
+              >
+              Game Assets
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="./assets/project3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cube Runner</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://abhiii1706-official.itch.io/cube-runner-adobe-illustrator-files'"
+              >
+              Game Assets
+              </button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+
+
+
+
+      <img
+        id="arrow-icon"
+        src="./assets/arrowlight.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            id="email-icon"
+            src="./assets/emailight.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=1706abhishekyewale@gmail.com" target="_blank">1706abhishekyewale@gmail.com</a>
+        </div>
+        <div class="contact-info-container">
+          <img
+            id="Phone-icon"
+            src="./assets/phone-calllight.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <a  target="_blank">+91 9653291545</a>
+        </div>
+      </div>
+     
+    </section>
+    <button id="scrollToTop" title="Go to top">⬆️</button>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MenowRunner | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .back-button {
+      background-color: #1f1f1f;
+      color: #fff;
+      padding: 10px 20px;
+      border: 2px solid #00fff0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #00fff0;
+      color: #000;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 30px 0;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #333;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #00fff0;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #00fff0;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 255, 240, 0.1);
+    }
+
+    .download-button {
+      background-color: #00fff0;
+      color: #000;
+      font-weight: bold;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      display: block;
+      margin: 0 auto 60px;
+    }
+
+    .download-button:hover {
+      background-color: #00cccc;
+    }
+
+    .scroll-up-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #00fff0;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 255, 240, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .scroll-up-button:hover {
+      transform: translateY(-5px);
+    }
+
+    .scroll-up-button svg {
+      width: 24px;
+      height: 24px;
+      fill: #000;
+    }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+ /* Full‐screen dark overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;            /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* The enlarged image */
+.popup-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 240, 0.3);
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="back-button" onclick="history.back()">← Back</button>
+
+    <h1>Meow Runner</h1>
+
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rNrIw1_YNE4?si=fjhdc2C3mCUUYDzA&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <div class="image-grid">
+      <img src="./Project1/Meow_Runner Preview [NetMode_ Standalone 0]  (64-bit_PC D3D SM5) 5_6_2025 5_57_46 PM.png" alt="Game Screenshot 1">
+      <img src="./Project1/Meow_Runner Preview [NetMode_ Standalone 0]  (64-bit_PC D3D SM5) 5_6_2025 5_58_04 PM.png" alt="Game Screenshot 2">
+      <img src="./Project1/Meow_Runner Preview [NetMode_ Standalone 0]  (64-bit_PC D3D SM5) 5_6_2025 5_58_09 PM.png" alt="Game Screenshot 3">
+      <img src="./Project1/Meow_Runner Preview [NetMode_ Standalone 0]  (64-bit_PC D3D SM5) 5_6_2025 5_58_16 PM.png" alt="Game Screenshot 1">
+      <img src="./Project1/Meow_Runner Preview [NetMode_ Standalone 0]  (64-bit_PC D3D SM5) 5_6_2025 5_58_22 PM.png" alt="Game Screenshot 2">
+            
+    </div>
+    
+
+    <div class="grid-section">
+      <div class="card">
+        <h2>About</h2>
+        <p style="color: #f9fafb; font-size: 1.2rem; line-height: 1.8;">
+          Meow Runner is my first 3D endless runner made in Unreal Engine 5 It's a fast-paced game where you dodge obstacles, collect pickups, and try to survive as long as you can! Built entirely using Blueprint scripting, this project helped me understand how procedural gameplay and dynamic systems work.
+        </p>
+        <p style="color: #f9fafb; font-size: 1.2rem; line-height: 1.8; margin-top: 1rem;">
+          This is more than just a game — it’s a major milestone in my Unreal Engine journey, and a fun way to showcase everything I’ve learned so far. 🚀
+        </p>
+      </div>
+      <div class="card">
+        <h2>Project Info</h2>
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-gamepad" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Title:</span>
+          <span style="color: #f9fafb;">Meow Runner</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-shapes" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Genre:</span>
+          <span style="color: #f9fafb;">3D Endless Runner</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-cogs" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Engine:</span>
+          <span style="color: #f9fafb;">Unreal Engine 5</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-desktop" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Platform:</span>
+          <span style="color: #f9fafb;">PC</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-user" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Role:</span>
+          <span style="color: #f9fafb;">Solo Developer</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-star" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Core Features:</span>
+          <span style="color: #f9fafb;">Endless Run, Obstacles, Pickups, Save System</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-palette" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Art Style:</span>
+          <span style="color: #f9fafb;">Stylized Low Poly</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 40px;">
+      <h2 class="section-title">🚧Development Journey</h2>
+    <p>  The journey of building Meow Runner started with a simple goal: to create a fun and fast-paced 3D endless runner using Unreal Engine 5 and 
+      Blueprint scripting. I began by developing an endless floor generation system that spawns tiles as the player moves forward.
+       Once the basic movement was in place, I focused on designing a dynamic obstacle spawning system to keep each run fresh and challenging. 
+       I then added collectible items and power-ups to reward player progression. As the game evolved, I implemented a scoring system
+        along with a save/load feature to track high scores. UI design was also a major step—creating intuitive menus and a 
+        responsive HUD to improve user experience. Every feature was built and refined through testing, iteration, and learning,
+         helping me understand game loops, procedural design, and gameplay balancing.</p>
+      <ul style="list-style: none; padding-left: 0; color: #f9fafb; line-height: 1.6;">
+        <li><i class="fas fa-check-circle" style="color: #3b82f6; margin-right: 8px;"></i>Created smooth transitions and character animations</li>
+        <li><i class="fas fa-check-circle" style="color: #3b82f6; margin-right: 8px;"></i> Designed a score system with persistent save/load</li>
+        <li><i class="fas fa-check-circle" style="color: #3b82f6; margin-right: 8px;"></i> Learned procedural spawning and infinite level logic</li>
+        <li><i class="fas fa-check-circle" style="color: #3b82f6; margin-right: 8px;"></i> Improved game polish through UI/UX and feedback loops</li>
+      </ul>
+    </div>
+
+    <div class="image-grid">
+      <img src="./Project1/Meow_Runner - Unreal Editor 5_6_2025 5_53_23 PM.png" alt="Game Screenshot 1">
+      <img src="./Project1/Meow_Runner - Unreal Editor 5_6_2025 5_52_19 PM.png" alt="Game Screenshot 2">
+      <img src="./Project1/Final_2DGame - Unreal Editor 5_6_2025 5_06_39 PM.png" alt="Game Screenshot 3">
+      
+    </div>
+
+    <div class="card" style="margin-bottom: 30px;">
+      <h2 class="section-title">What Was Learned?</h2>
+      <ul style="list-style: none; padding-left: 0; color: #f9fafb; font-size: 1.15rem; line-height: 2;">
+        <li><i class="fas fa-cogs" style="color: #3b82f6; margin-right: 10px;"></i> Building procedural floor and obstacle spawning systems using Blueprints</li>
+        <li><i class="fas fa-gamepad" style="color: #3b82f6; margin-right: 10px;"></i> Creating responsive character movement with jump and dash mechanics</li>
+        <li><i class="fas fa-magic" style="color: #3b82f6; margin-right: 10px;"></i> Adding collectibles, power-ups, and implementing gameplay balancing</li>
+        <li><i class="fas fa-save" style="color: #3b82f6; margin-right: 10px;"></i> Developing a save system to store and display high scores</li>
+        <li><i class="fas fa-tv" style="color: #3b82f6; margin-right: 10px;"></i> Designing a clean UI with menus, score tracking, and feedback prompts</li>
+        <li><i class="fas fa-film" style="color: #3b82f6; margin-right: 10px;"></i> Using animation states and transitions for smooth character behavior</li>
+        <li><i class="fas fa-vial" style="color: #3b82f6; margin-right: 10px;"></i> Testing, debugging, and iterating to refine game feel and performance</li>
+      </ul>
+    </div>
+
+    <button class="download-button" onclick="location.href='https://abhiii1706-official.itch.io/menow'">Download</button>
+  </div>
+
+  <button class="scroll-up-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h16z"/>
+    </svg>
+  </button>
+
+  <script>
+    const scrollBtn = document.querySelector('.scroll-up-button');
+
+    function handleScroll() {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+
+      if (scrollPosition >= pageHeight - 10) {
+        scrollBtn.style.display = 'flex';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', handleScroll);
+  </script>
+  
+  <div class="popup-overlay" id="popupOverlay">
+    <img id="popupImage" src="" alt="Expanded View"/>
+  </div>  
+<script>
+  const overlay    = document.getElementById('popupOverlay');
+  const popupImage = document.getElementById('popupImage');
+  const gridImages = document.querySelectorAll('.image-grid img');
+
+  // 1) Clicking a thumbnail → show overlay + image
+  gridImages.forEach(img => {
+    img.addEventListener('click', () => {
+      popupImage.src = img.src;
+      overlay.style.display = 'flex';
+    });
+  });
+
+  // 2) Clicking anywhere on the overlay (outside OR on the image) → hide
+  overlay.addEventListener('click', () => {
+    overlay.style.display = 'none';
+  });
+
+  // 3) Prevent clicks _on_ the image from closing immediately
+  popupImage.addEventListener('click', e => {
+    e.stopPropagation();
+  });
+</script>
+  
+</body>
+</html>

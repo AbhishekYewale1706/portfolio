@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treasure Hunters | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .back-button {
+      background-color: #1f1f1f;
+      color: #fff;
+      padding: 10px 20px;
+      border: 2px solid #00fff0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #00fff0;
+      color: #000;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 30px 0;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #333;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #00fff0;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #00fff0;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 255, 240, 0.1);
+    }
+
+    .download-button {
+      background-color: #00fff0;
+      color: #000;
+      font-weight: bold;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      display: block;
+      margin: 0 auto 60px;
+    }
+
+    .download-button:hover {
+      background-color: #00cccc;
+    }
+
+    .scroll-up-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #00fff0;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 255, 240, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .scroll-up-button:hover {
+      transform: translateY(-5px);
+    }
+
+    .scroll-up-button svg {
+      width: 24px;
+      height: 24px;
+      fill: #000;
+    }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+ /* Full‐screen dark overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;            /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* The enlarged image */
+.popup-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 240, 0.3);
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="back-button" onclick="history.back()">← Back</button>
+
+    <h1>Treasure Hunters</h1>
+
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3J9I3QzLbAU?si=SDzomUFBBIgUGg4X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <div class="image-grid">
+      <img src="./Project/treasurehunterimage2.png" alt="Game Screenshot 1">
+      <img src="./Project/treasurehunterimage3.png" alt="Game Screenshot 2">
+      <img src="./Project/treasurehunterimage4.png" alt="Game Screenshot 3">
+      <img src="./Project/treasurehunterimage5.png" alt="Game Screenshot 1">
+      <img src="./Project/treasurehunterimage6.png" alt="Game Screenshot 2">
+            
+    </div>
+    
+
+    <div class="grid-section">
+      <div class="card">
+        <h2>About</h2>
+        <p>Treasure Hunters is a 2D platformer and my first game built in Unreal Engine 5. It showcases my early journey into game development — from designing levels and animations to coding mechanics and UI. This project helped me learn the fundamentals while creating a fun, fast-paced experience filled with traps, enemies, and collectibles.</p>
+      </div>
+      <div class="card">
+        <h2>Project Info</h2>
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-gamepad" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Title:</span>
+          <span style="color: #f9fafb;">Treasure Hunters</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-shapes" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Genre:</span>
+          <span style="color: #f9fafb;">2D Platformer</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-cogs" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Engine:</span>
+          <span style="color: #f9fafb;">Unreal Engine 5</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-desktop" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Platform:</span>
+          <span style="color: #f9fafb;">PC</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-user" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Role:</span>
+          <span style="color: #f9fafb;">Solo Developer</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-star" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Core Features:</span>
+          <span style="color: #f9fafb;">Jump, Dash, Attack, Collectibles, Traps</span>
+        </div>
+      
+        <div style="margin-bottom: 12px;">
+          <i class="fas fa-palette" style="color: #3b82f6; margin-right: 8px;"></i>
+          <span style="color: #3b82f6; font-weight: 600;">Art Style:</span>
+          <span style="color: #f9fafb;">Pixel Art</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 40px;">
+      <h2 class="section-title">🚧Development Journey</h2>
+      <p style="color: #f9fafb; font-size: 1rem; line-height: 1.6; margin-bottom: 1.2rem;">
+        Building <strong>Treasure Hunters</strong> has been an exciting and hands-on learning experience. 
+        From prototyping player mechanics to designing enemy behaviors and UI systems, each step helped me 
+        grow as a game developer. Here's a breakdown of what I've accomplished so far in building Treasure Hunters using Unreal Engine 5:
+        </p>
+      <ul style="list-style: none; padding-left: 0; color: #f9fafb; line-height: 1.6;">
+        <li><i class="fas fa-check-circle" style="color: #3b82f6; margin-right: 8px;"></i> Core movement: Jumping, dashing, and attacking fully implemented</li>
+        <li><i class="fas fa-check-circle" style="color: #3b82f6; margin-right: 8px;"></i> Designed levels using tilemaps and platforming challenges</li>
+        <li><i class="fas fa-check-circle" style="color: #3b82f6; margin-right: 8px;"></i> Created traps, collectibles, and key interaction systems</li>
+        <li><i class="fas fa-check-circle" style="color: #3b82f6; margin-right: 8px;"></i> UI setup: Health bar, key tracker, and death screen</li>
+      </ul>
+    </div>
+
+    <div class="image-grid">
+      <img src="./Project/Final_2DGame - Unreal Editor 5_6_2025 4_52_53 PM.png" alt="Game Screenshot 1">
+      <img src="./Project/Final_2DGame - Unreal Editor 5_6_2025 4_56_42 PM.png" alt="Game Screenshot 2">
+      <img src="./Project/Final_2DGame - Unreal Editor 5_6_2025 4_57_59 PM.png" alt="Game Screenshot 3">
+      
+    </div>
+
+    <div class="card" style="margin-bottom: 30px;">
+      <h2 class="section-title">What Was Learned?</h2>
+      <ul style="list-style: none; padding-left: 0; color: #f9fafb; font-size: 1.15rem; line-height: 2;">
+        <li><i class="fas fa-box" style="color: #3b82f6; margin-right: 10px;"></i> Importing and managing 2D assets in Unreal Engine 5</li>
+        <li><i class="fas fa-running" style="color: #3b82f6; margin-right: 10px;"></i> Setting up character animation states and logic</li>
+        <li><i class="fas fa-gamepad" style="color: #3b82f6; margin-right: 10px;"></i> Programming gameplay mechanics like movement, dash, and attacks</li>
+        <li><i class="fas fa-layer-group" style="color: #3b82f6; margin-right: 10px;"></i> Level design using TileMaps and collision</li>
+        <li><i class="fas fa-bolt" style="color: #3b82f6; margin-right: 10px;"></i> Creating interactable items, enemies, and traps</li>
+        <li><i class="fas fa-desktop" style="color: #3b82f6; margin-right: 10px;"></i> Designing game UI and connecting it to gameplay logic</li>
+        <li><i class="fas fa-bug" style="color: #3b82f6; margin-right: 10px;"></i> Debugging, playtesting, and polishing mechanics for better game feel</li>
+      </ul>
+    </div>
+
+    <button class="download-button" onclick="location.href='https://abhiii1706-official.itch.io/2d-plat'">Download</button>
+  </div>
+
+  <button class="scroll-up-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h16z"/>
+    </svg>
+  </button>
+
+  <script>
+    const scrollBtn = document.querySelector('.scroll-up-button');
+
+    function handleScroll() {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+
+      if (scrollPosition >= pageHeight - 10) {
+        scrollBtn.style.display = 'flex';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', handleScroll);
+  </script>
+  
+  <div class="popup-overlay" id="popupOverlay">
+    <img id="popupImage" src="" alt="Expanded View"/>
+  </div>  
+<script>
+  const overlay    = document.getElementById('popupOverlay');
+  const popupImage = document.getElementById('popupImage');
+  const gridImages = document.querySelectorAll('.image-grid img');
+
+  // 1) Clicking a thumbnail → show overlay + image
+  gridImages.forEach(img => {
+    img.addEventListener('click', () => {
+      popupImage.src = img.src;
+      overlay.style.display = 'flex';
+    });
+  });
+
+  // 2) Clicking anywhere on the overlay (outside OR on the image) → hide
+  overlay.addEventListener('click', () => {
+    overlay.style.display = 'none';
+  });
+
+  // 3) Prevent clicks _on_ the image from closing immediately
+  popupImage.addEventListener('click', e => {
+    e.stopPropagation();
+  });
+</script>
+  
+</body>
+</html>
